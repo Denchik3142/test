@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container{
+    max-width: 956px;
+    margin: 0 auto;
+}
+
+.food__descr{
+    width: 100%;
+    height: 364px;
+    padding: 80px 0px;
+}
+
+.food__descr__block{
+    height: 204px;
+    width: 389px;
+    background-color:#FFF;
+    padding: 38px 29px 38px 38px;
+    transition: 0.5s;
+}
+
+.food__descr__block:hover{
+    transform: scale(1.1);
+}
+
+.food__descr__title{
+    color: #1D1D1D;
+    font-family: "Roboto";
+    font-size: 36px;
+    margin-bottom: 54px;
+}
+
+.food__descr__info{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.food__descr__price{
+    color: #626262;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.food__descr__time{
+    width: 100px;
+    height: 32px;
+    background-color:#262626;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+h1{
+    color: #1D1D1D;
+    font-family: "Roboto";
+    font-size: 22px;
+    line-height: 34px; /* 154.545% */
+    margin-bottom: 16px;
+}
+
+
+.menu__cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.menu__cards__card{
+    transition: 0.5s;
+    margin-bottom: 16px;
+}
+
+.menu__cards__card img{
+    transition: 0.5s;
+    max-width: 317px;
+    height: 256px;
+}
+
+.menu__cards__card:hover{
+    .menu__cards__info{
+        fill: #757575;
+        background: rgba(0, 0, 0, 0.03999999910593033);
+        z-index: -1;
+    }
+    transform: scale(1.05);
+
+}
+
+.active__card{
+    fill: #757575;
+    background: rgba(0, 0, 0, 0.03999999910593033);
+    z-index: -1;
+}
+
+.menu__cards__info{
+    padding-top: 16px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto";
+    transition: 0.2s;
+    margin-bottom: 16px;
+}
+
+.menu__cards__info h3{
+    color: #1D1D1D;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.menu__cards__info p{
+    color: #626262;
+}
+
+.menu__cards__time{
+    color: #1D1D1D;
+    font-size: 13px;
+    line-height: 21px; /* 161.538% */
+}
+
+.categories{
+    color: #626262;;
+    font-family: "Roboto";
+    font-size: 16px;
+
+    padding-top: 32px;
+    padding-bottom: 29px;
+    min-height: 80px;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.20);;
+}
+
+nav{
+    max-width: 605px;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    transition: 0.3s;
+}
+nav li:hover{
+    color: #327430;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.activeli{
+    color: #327430;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.header{
+    height: 72px;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__content__right button{
+    width: 78px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+
+    color: #1D1D1D;
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+li{
+	list-style-type: none;
+}
